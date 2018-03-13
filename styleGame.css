@@ -1,0 +1,77 @@
+* {padding 0; margin: 0; }
+h1 {
+  color: white;
+  margin-top: 0.5em;
+  text-align: center;
+}
+h2  {display: none;}
+h6  {display: none;}
+
+.mdc-toolbar {
+  display: inline-block;
+  background-color: #eee;
+  background-size: cover;
+  color: black;
+}
+#menu {color: black;}
+#menuTitle {display: none;}
+
+#knapp1 {padding-left: 1em;}
+#knapp2 {padding-left: 1em;}
+
+body {
+  background-color: #eee;
+  background-image: url(galaxyCopyUpSlim.jpg);
+  }
+
+#gallery {
+  --mdc-theme-primary: #eee;
+  color: black;
+  padding-left: 25%;
+  padding-top: 1em;
+}
+
+.mdc-grid-tile__title {color: black;}
+
+
+  @media (min-width: 35em){
+    h1 {color: black;}
+
+    .mdc-toolbar {
+      display: inline-block;
+      background-color: #613C7F;
+      background-image: url(galaxyCopy.jpg);
+      background-size: cover;
+      color: white;
+    }
+    #menu {
+      color: white;
+      padding-right: 1em;
+      padding-left: 0.5em;
+      padding-top: 0.6em;
+    }
+    #menuTitle {
+      display: inline-block;
+    }
+
+
+    #gallery {
+      width: 75%;
+      --mdc-theme-primary: #613C7F;
+      padding: 5em 2em 1.5em 12em;
+    }
+
+    .mdc-grid-tile__title {color: white;}
+
+
+    body {
+      background-color: #eee;
+      background-image: none;
+  }
+  #logo {
+    width: 5em;
+    height: 5em;
+    margin-left: 1em;
+    margin-bottom: 1em;
+    float: left;
+  }

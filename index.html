@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project</title>
+    <script src="material-components-web/material-components-web.js"></script>
+    <link rel="stylesheet" href="material-components-web/material-components-web.css">
+    <link rel="stylesheet" href="material-components-web/material-components-web-extra.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+  </head>
+  <body>
+      <header id="toolbar" class="mdc-toolbar">
+        <div class="mdc-toolbar__row">
+          <section class="mdc-toolbar__section mdc-toolbar__section--align-start">
+            <h6>ToolBar Start</h6>
+            <a href="#" id="menu" class="material-icons mdc-toolbar__icon--menu">menu</a>
+            <span id="menuTitle" class="mdc-toolbar__title">Another Brick In The Space</span>
+          </section>
+          <section class="mdc-toolbar__section mdc-toolbar__section--align-end">
+            <h6>ToolBar End</h6>
+            <i id="knapp1" class="material-icons">favorite_border</i>
+            <i id="knapp2" class="material-icons">favorite</i>
+          </section>
+        </div>
+      </header>
+
+      <aside class="mdc-temporary-drawer mdc-typography">
+      <nav class="mdc-temporary-drawer__drawer">
+        <header id="drawer" class="mdc-temporary-drawer__header">
+          <div class="mdc-temporary-drawer__header-content">
+            Imaginary Games
+          </div>
+        </header>
+        <nav id="icon-with-text-demo" class="mdc-temporary-drawer__content mdc-list">
+          <a class="mdc-list-item" href="games.html">
+            <i class="material-icons mdc-list-item__start-detail" aria-hidden="true">videogame_asset</i>All Games
+          </a>
+          <a class="mdc-list-item">
+            <i class="material-icons mdc-list-item__start-detail" aria-hidden="true">star</i>Favorites
+          </a>
+          <a class="mdc-list-item">
+            <i class="material-icons mdc-list-item__start-detail" aria-hidden="true">access_time</i>Latest
+          </a>
+        </nav>
+      </nav>
+    </aside>
+    <h1 class="mdc-typography--headline">.: Another Brick In The Space :. </h1>
+    <canvas id="myCanvas" width="720" height="360"></canvas>
+
+    <img id="logo" src="games/logo1x.png" srcset="games/logo1x.png 1x, games/logo2x.png 2x" alt="Logo">
+
+    <div id="textfield" class="mdc-textfield mdc-typography" data-mdc-auto-init="MDCTextfield">
+      <input class="mdc-textfield__input" id="input" type="text">
+      <label class="mdc-textfield__label" for="input">Enter your name</label>
+    </div>
+
+    <section id="volym">
+      <h2>Volym</h2>
+        <div class="mdc-switch">
+          <input type="checkbox" id="basic-switch" class="mdc-switch__native-control" />
+            <div class="mdc-switch__background">
+             <div class="mdc-switch__knob"></div>
+            </div>
+          </div>
+        <label for="basic-switch" class="mdc-typography--subheading2"> Sound On/Off </label>
+    </section>
+  </body>
+</html>
